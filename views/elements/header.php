@@ -9,17 +9,18 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="<?php echo BASE_URL?>views/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL?>views/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
     <link href="<?php echo BASE_URL?>views/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL?>views/css/custom.css" rel="stylesheet">
       <?php
       if($u->isAdmin()) {
           ?>
-          <link rel="stylesheet" href="<?php echo BASE_URL?>application/plugins/tinyeditor/tinyeditor.css">
+          <link rel="stylesheet" href="<?php echo BASE_URL?>views/css/admin.css">
       <?php
       }
       ?>

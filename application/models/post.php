@@ -79,4 +79,11 @@ class Post extends Model{
         $message = "Post updated.";
         return $message;
     }
+
+    public function deletePost($pID){
+        $sql= 'DELETE from posts WHERE pID=?';
+        $this->db->execute($sql, array($pID));
+        $message = 'Post removed.';
+        return $message;
+    }
 }
